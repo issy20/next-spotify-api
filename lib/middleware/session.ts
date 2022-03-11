@@ -1,5 +1,4 @@
-import { NextApiRequest, NextApiResponse } from 'next'
-import { Handler, withIronSession } from 'next-iron-session'
+import { withIronSession } from 'next-iron-session'
 import { ApiHandler } from '../type/handler'
 
 const withSession = (handler: ApiHandler<{}, {}>) => {
