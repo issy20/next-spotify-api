@@ -7,6 +7,7 @@ const Home: NextPage = ({
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const login = useCallback(() => {
     window.location.href = loginPath
+    console.log(loginPath)
   }, [loginPath])
   return (
     <Layout>
